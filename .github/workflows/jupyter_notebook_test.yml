@@ -1,13 +1,9 @@
 name: Test Jupyter Notebooks
-on:
-  schedule:
-    - cron: '30 16 * * *'
-  workflow_dispatch:
+on: [push]
 jobs:
   test_jupyter_notebook:
     name: Runs Jupyter notebook with dev Conda environment.
     runs-on: ubuntu-latest
-
     steps:
     - uses: actions/checkout@v3
     - name: Add conda to system path
