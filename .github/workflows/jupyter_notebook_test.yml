@@ -1,12 +1,11 @@
 name: Test Jupyter Notebooks
 on: [push]
 jobs:
-  test_jupyter_notebook:
-    name: Runs Jupyter notebook with dev Conda environment.
+  build:
     runs-on: ubuntu-latest
     steps:
-     - name: Check out repository code
-        uses: actions/checkout@v3
+    - name: Check out repository code
+      uses: actions/checkout@v3
     - name: Add conda to system path
       run: |
         # $CONDA is an environment variable pointing to the root of the miniconda directory
