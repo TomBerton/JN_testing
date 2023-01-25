@@ -1,8 +1,14 @@
 name: Test Jupyter Notebooks
 on: [push]
 jobs:
-  build:
-    runs-on: ubuntu-latest
+  build-docs:
+    name: Building on (${{ matrix.python-version }}, ${{ matrix.os }})
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: False
+      matrix:
+        os: ["ubuntu-latest", "macos-latest"]
+        python-version: ["3.10"]
     defaults:
       run:
         shell: bash -l {0}
