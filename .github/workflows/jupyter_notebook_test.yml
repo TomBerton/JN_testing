@@ -7,8 +7,8 @@ jobs:
       run:
         shell: bash -l {0}
     steps:
-      - uses: actions/checkout@v3
       - name: Check out repository code
+        uses: actions/checkout@v3
 
     # See: https://github.com/marketplace/actions/setup-miniconda
       - name: Setup Miniconda
