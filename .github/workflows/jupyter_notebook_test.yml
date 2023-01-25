@@ -13,8 +13,8 @@ jobs:
       run:
         shell: bash -l {0}
     steps:
+      - uses: actions/checkout@v3
       - name: Check out repository code
-        uses: actions/checkout@v3
 
     # See: https://github.com/marketplace/actions/setup-miniconda
       - name: Setup Miniconda
@@ -29,8 +29,8 @@ jobs:
           use-mamba: true
 
       - name: Build environment
-      run:
-        conda activate dev
+        run:
+          conda activate dev
 
       - name: Run script to test Jupyter notebooks
         run: |
