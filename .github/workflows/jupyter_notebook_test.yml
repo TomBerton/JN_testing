@@ -12,7 +12,7 @@ jobs:
 
     # See: https://github.com/marketplace/actions/setup-miniconda
       - name: Setup Miniconda
-        uses: conda-incubator/setup-miniconda@v2.2.0
+        uses: conda-incubator/setup-miniconda@v3
         with:
           auto-update-conda: true
           miniforge-variant: Mambaforge
@@ -28,4 +28,4 @@ jobs:
       - name: Run script to test Jupyter notebooks
         run: |
           cd Jupyter_Notebooks
-          python ../scripts/jupyter_notebook_testing/jn_testing.py
+          python ../scripts/jn_test.py
