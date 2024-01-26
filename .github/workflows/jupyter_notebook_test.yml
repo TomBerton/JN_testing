@@ -28,4 +28,4 @@ jobs:
       - name: Run script to test Jupyter notebooks
         run: |
           cd Jupyter_Notebooks
-          python ../scripts/jupyter_notebook_testing/jn_testing.py
+          python ../scripts/jn_test.py
