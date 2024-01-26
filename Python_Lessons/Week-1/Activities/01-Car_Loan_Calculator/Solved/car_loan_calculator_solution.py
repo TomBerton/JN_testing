@@ -16,6 +16,7 @@ def calculate_future_value(current_loan_value, annual_interest_rate, months_rema
     # Print the future value of the car to 2 decimal places and thousandths.
     print(f"The future value of the new car is ${future_value: ,.2f}.")
 
+
 if __name__ == "__main__":
     # The new_car_loan dictionary.
     new_car_loan = {
