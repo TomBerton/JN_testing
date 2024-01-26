@@ -1,5 +1,6 @@
 """ Calculating the cost of a new car"""
 
+
 def calculate_future_value():
     """
     Create a function called calculate_future_value
@@ -13,8 +14,6 @@ def calculate_future_value():
     """
 
     # Print the future value of the car to 2 decimal places and thousandths.
-
-
 
 if __name__ == "__main__":
     # The new_car_loan dictionary.
