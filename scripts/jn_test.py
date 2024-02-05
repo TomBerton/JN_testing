@@ -5,6 +5,7 @@ Then add that Conda environment to the Jupyter kernel.
 """
 
 import os
+import sys
 import nbformat
 from nbconvert.preprocessors import ExecutePreprocessor, CellExecutionError
 
