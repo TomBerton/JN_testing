@@ -34,13 +34,13 @@ def test_notebooks():
                     execute_nb = ExecutePreprocessor(timeout=600, kernel_name='python3')
                     try:
                         output = execute_nb.preprocess(read_nb)
-                        print(f"{subfolder}/{file} passed.")
+                        print(f"{file} passed.")
                     except CellExecutionError as error:
                         output = None
-                        print(f"There was an error executing {subfolder}/{file}.")
+                        print(f"There was an error executing {file}.")
                         print(error)
                         #  Terminate script upon encountering an error.
-                        sys.exit(1)
+                        sys.exit(f"There was an error executing {subfolder}/{file}: {error}")
 
 
 test_notebooks()
