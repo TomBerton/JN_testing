@@ -2,6 +2,7 @@ name: Test Jupyter Notebooks
 on: [push]
 jobs:
   build-docs:
+    name: Jupyter-Notebook-QA
     runs-on: ubuntu-latest
     defaults:
       run:
