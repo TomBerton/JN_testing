@@ -1,9 +1,5 @@
 name: Test Jupyter Notebooks
-on:
-  push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
+on: [push]
 jobs:
   build-docs:
     name: Jupyter-Notebook-QA
