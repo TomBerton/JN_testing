@@ -5,6 +5,7 @@ Then add that Conda environment to the Jupyter kernel.
 """
 
 import os
+import sys
 import nbformat
 from nbconvert.preprocessors import ExecutePreprocessor, CellExecutionError
 
@@ -38,6 +39,8 @@ def test_notebooks():
                         output = None
                         print(f"There was an error executing {subfolder}/{file}.")
                         print(error)
+                        #  Terminate script upon encountering an error.
+                        sys.exit(1)
 
 
 test_notebooks()
