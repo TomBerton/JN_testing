@@ -37,11 +37,13 @@ dependencies:
   - nbclient
   - nbconvert
   - nbformat
+  - nltk
   - notebook
   - numpy
   - numpy-base
   - numpydoc
   - pandas
+  - pillow
   - pip
   - plotly
   - pylint
@@ -54,9 +56,21 @@ dependencies:
   - scikit-image
   - scikit-learn
   - scikit-learn-intelex
+  - snowballstemmer
   - sqlalchemy
   - sqlite
   - statsmodels
+  - tokenizers
+  - transformers
   - xlrd
   - xlsxwriter
   - xlwings
+  - pip:
+      - grpcio
+      - imblearn
+      - keras
+      - requests-oauthlib
+      - spacy
+      - spacy-legacy
+      - spacy-loggers
+      - tensorflow
